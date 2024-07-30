@@ -1,0 +1,144 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Movie API Requests</title>
+    
+  </head>
+  <body>
+    <div class="navbar">
+        <a href="#" id="now-playing">Now Playing</a>
+        <a href="#" id="popular">Popular</a>
+      <a href="#" id="top-rated">Top Rated</a>
+      <a href="#" id="upcoming">Upcoming</a>
+    </div>
+    <div id="movies">
+        <h1 class=""></h1>
+    </div>
+
+    <script src="./js/main.js"></script>
+  </body>
+</html> -->
+
+
+
+<!DOCTYPE html>
+<html lang="en" class="bg-black">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/output.css">
+    <title>Movie Display</title>
+   
+  </head>
+  <body >
+    <nav class="flex  items-center justify-around bg-black text-white py-3  mt-3 my-6">
+    <button class="hover:text-red-400" id="top-rated">Top Rated</button>
+    <button class="hover:text-red-400" id="now-playing">Now Playing</button>
+    <button class="hover:text-red-400" id="popular">Popular</button>
+    <button class="hover:text-red-400" id="upcoming">Upcoming</button>
+  </nav>
+    <div class="flex flex-wrap justify-around w-full " id="movies"></div>
+
+  
+    
+   
+    <div class="bg-white p-8 rounded-lg shadow-lg w-full max-w-lg mx-auto mb-6 mt-8">
+        <h2 class="text-2xl font-bold mb-6 text-gray-700">Sign Up</h2>
+        <form id="signupForm" class="space-y-6">
+            <!-- First Row: Name and Email -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                <!-- Name Input -->
+                <div>
+                    <label for="name" class="block text-sm font-medium text-gray-700"></label>
+                    <input type="text" id="name" placeholder="name" name="name" class="mt-1 block w-full border border-gray-300 rounded-md shadow-sm focus:border-blue-500 focus:ring-blue-500 sm:text-sm" required>
+                    <p id="nameError" class="error"></p>
+                </div>
+
+                <!-- Email Input -->
+                <div>
+                    <label for="email" class="block text-sm font-medium text-gray-700"></label>
+                    <input type="email" id="email" placeholder="email" name="email" class="mt-1 block w-full border border-gray-300 rounded-md shadow-sm focus:border-blue-500 focus:ring-blue-500 sm:text-sm" required>
+                    <p id="emailError" class="error"></p>
+                </div>
+            </div>
+
+            <!-- Second Row: Age and Phone Number -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                <!-- Age Input -->
+                <div>
+                    <label for="age" class="block text-sm font-medium text-gray-700"></label>
+                    <input type="number" id="age" name="age" placeholder="age" class="mt-1 block w-full border border-gray-300 rounded-md shadow-sm focus:border-blue-500 focus:ring-blue-500 sm:text-sm" min="1" required>
+                    <p id="ageError" class="error"></p>
+                </div>
+
+                <!-- Phone Number Input -->
+                <div>
+                    <label for="phone" class="block text-sm font-medium text-gray-700"></label>
+                    <input type="text" id="phone" name="phone" placeholder="Phone Number" pattern="\d{11}" class="mt-1 block w-full border border-gray-300 rounded-md shadow-sm focus:border-blue-500 focus:ring-blue-500 sm:text-sm" required>
+                    <p id="phoneError" class="error"></p>
+                </div>
+            </div>
+
+            <!-- Third Row: Password and Re-enter Password -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                <!-- Password Input -->
+                <div>
+                    <label for="password" class="block text-sm font-medium text-gray-700"></label>
+                    <input type="password" id="password" placeholder="Password" name="password" pattern="(?=.*\d).{8,}" class="mt-1 block w-full border border-gray-300 rounded-md shadow-sm focus:border-blue-500 focus:ring-blue-500 sm:text-sm" required>
+                    <p id="passwordError" class="error"></p>
+                </div>
+
+                <!-- Re-enter Password Input -->
+                <div>
+                    <label for="rePassword" class="block text-sm font-medium text-gray-700"></label>
+                    <input type="password" id="rePassword" placeholder="Re-enter Password" name="rePassword" class="mt-1 block w-full border border-gray-300 rounded-md shadow-sm focus:border-blue-500 focus:ring-blue-500 sm:text-sm" required>
+                    <p id="rePasswordError" class="error"></p>
+                </div>
+            </div>
+
+            <!-- Submit Button -->
+            <div>
+                <button type="submit" class="w-full py-2 px-4 bg-blue-600 text-white rounded-md hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2">Sign Up</button>
+            </div>
+        </form>
+    </div>
+
+
+
+
+    <script src="./js/main.js"></script>
+    
+      
+  </body>
+</html>
+
+
+
+<!-- body {
+    font-family: Arial, sans-serif;
+  }
+  .navbar {
+    display: flex;
+    justify-content: space-around;
+    background-color: #333;
+    padding: 10px;
+  }
+  .navbar a {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+  }
+  .navbar a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+  #movies {
+    padding: 20px;
+  }
+  .movie {
+    border: 1px solid #ddd;
+    margin: 10px;
+    padding: 10px;
+  } -->
